@@ -220,7 +220,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <div class="w3-content w3-justify w3-text-grey w3-padding-64"  id="casos">
     <!-- Casos tables -->
-    <h3 class="w3-padding-16 w3-text-blue-grey">CASOS DE ESTUDIO</h3>
+    <h2 class="w3-blue-grey">CASOS DE ESTUDIO</h2>
     <p> Información proximamente...</p>
 
     <!-- End About Section -->
@@ -232,7 +232,43 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="quiz">
       <h2 class="w3-blue-grey"> TALLERES</h2>
-    <p> Información proximamente...</p>
+    <div class="w3-container">
+      <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-blue-gray w3-left-align">Taller de preparación para la próxima sesión</button>
+      <div id="Demo1" class="w3-hide w3-animate-zoom">
+      <div class="w3-container">
+        <h3 class="w3-text-blue-gray">Lista de tareas:</h3>
+        <p>Realice las siguientes tareas previas al encuentro que tendremos el próximo miércoles 24
+          de Febrero de 2020.</p>
+        <ul class="w3-ul w3-card-4">
+          <li class="w3-bar">
+            <i class="fas fa-book-reader w3-bar-item w3-blue-gray  w3-hide-small" style="font-size:60px"></i>
+            <div class="w3-bar-item">
+              <span class=" w3-text-blue-gray"><a href="#photos">Descargue y estudie el cuaderno de funciones y paquetes.</a></span><br>
+              <br>
+              <span>En dicho cuaderno revisará la noción de función, módulo y paquete. Resulta un contenido elemental que permite entender el funcionamiento y uso los diversos
+              </span>
+            </div>
+          </li>
+
+          <li class="w3-bar">
+            <img src="img_avatar5.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+            <div class="w3-bar-item">
+              <span class="w3-large">Jill</span><br>
+              <span>Support</span>
+            </div>
+          </li>
+          <li class="w3-bar">
+            <img src="img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+            <div class="w3-bar-item">
+              <span class="w3-large">Jane</span><br>
+              <span>Accountant</span>
+            </div>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
 </div>
 
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="proyecto">
@@ -275,5 +311,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     </div>
 </body>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 </html>
 
